@@ -1,4 +1,4 @@
-<!-- ThinkFirst Studios sample site. Everett Pryce, Hollow & Ridge Real Estate, the phone number and the email address are FICTIONAL and used for demonstration only. Not a real agent, brokerage or business. No licence number, statistic or testimonial on this page is real — none are claimed. Photography is royalty-free stock, regional, and not represented as being of any specific address. Not for deployment to a live domain. Some photographs are public domain or Creative Commons works of named public places, credited in the footer. -->
+<!-- ThinkFirst Studios sample site. Everett Pryce, Hollow & Ridge Real Estate, the phone number and the email address are FICTIONAL and used for demonstration only. Not a real agent, brokerage or business. No licence number, statistic or testimonial on this page is real — none are claimed. Photography is stock, public domain or Creative Commons work credited in the footer. No house shown is for sale or connected to this sample. Not for deployment to a live domain. -->
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -33,289 +33,279 @@
 
   <header class="head" data-head>
     <div class="head__row">
-      <a class="head__name" href="#top">Everett Pryce</a>
+      <a class="head__name" href="#top">Everett Pryce<small>Real Estate in Granville, Ohio</small></a>
       <button class="head__toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav">Menu</button>
       <nav class="head__nav" id="nav" aria-label="Main">
         <a href="#about">About</a>
+        <a href="#houses">Houses</a>
         <a href="#looking-at">What You’re Looking At</a>
         <a href="#village">The Village</a>
-        <a href="#contact">Contact</a>
-        <a class="btn btn--small" href="#contact">Ask me one question</a>
+        <a href="#buying-selling">Buying &amp; Selling</a>
+        <a class="pill" href="#contact">Ask me one question</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <div id="top" class="hero">
+    <section class="hero" id="top" aria-labelledby="hero-title">
       <picture class="hero__photo">
-        <source media="(max-width: 599px)" type="image/webp"
-                srcset="assets/photos/broadway-hero-phone-800.webp 800w, assets/photos/broadway-hero-phone-1200.webp 1200w" sizes="100vw" width="1200" height="900">
-        <img src="assets/photos/broadway-hero-1600.webp"
-             srcset="assets/photos/broadway-hero-1000.webp 1000w, assets/photos/broadway-hero-1600.webp 1600w, assets/photos/broadway-hero-2400.webp 2400w"
-             sizes="100vw" width="2400" height="1350" fetchpriority="high"
-             alt="Broadway in Granville: a row of brick and painted storefronts under bare street trees.">
+        <source media="(max-width: 699px)" type="image/webp"
+                srcset="assets/photos/buxton-dusk-phone-800.webp 800w, assets/photos/buxton-dusk-phone-1200.webp 1200w" sizes="100vw">
+        <img src="assets/photos/buxton-dusk-1800.webp"
+             srcset="assets/photos/buxton-dusk-1200.webp 1200w, assets/photos/buxton-dusk-1800.webp 1800w, assets/photos/buxton-dusk-2600.webp 2600w"
+             sizes="100vw" width="2600" height="1105" fetchpriority="high"
+             alt="The Buxton Inn on Broadway at dusk: orange clapboard, black shutters and a two-story porch lit from within under dark street trees.">
       </picture>
       <div class="hero__copy">
-        <div class="wrap">
-          <h1 class="hero__name">Everett Pryce</h1>
-          <p class="hero__place">Granville, Ohio · Licking County</p>
-          <p class="hero__line">Old houses in a village built out of brick and clapboard, and land in the hills behind it. I can tell you what you are looking at.</p>
-          <p class="hero__actions">
-            <a class="btn" href="#contact">Ask me one question</a>
-            <a class="btn btn--line" href="#about">About Everett</a>
-          </p>
+        <h1 id="hero-title">Know what you’re looking at</h1>
+        <div class="hero__side">
+          <p>Old houses in a village of brick and clapboard, and land in the hills behind it.</p>
+          <a class="pill pill--clay" href="#contact">Ask me one question</a>
         </div>
       </div>
+      <p class="hero__place">The Buxton Inn, Broadway, at dusk</p>
+    </section>
+
+    <section class="intro wrap" id="about" aria-labelledby="about-title">
+      <figure class="intro__photo">
+        <img src="assets/photos/bank-doorway-900.webp" srcset="assets/photos/bank-doorway-640.webp 640w, assets/photos/bank-doorway-900.webp 900w"
+             sizes="(min-width: 900px) 30vw, 100vw" width="900" height="900" loading="lazy"
+             alt="A dark door in a stone wall, framed by white-painted pilasters and a plain entablature.">
+        <figcaption>Door and entablature at the Bank of the Alexandrian Society, East Broadway, now a museum.</figcaption>
+      </figure>
+      <div class="intro__text">
+        <h2 id="about-title">Before this I was a restoration carpenter</h2>
+        <p>For the better part of fifteen years I worked on old houses in this county and the counties either side of it: sash, sills, door casings, running trim. Most of what I know about how a house is assembled I learned with a piece of it in my hands.</p>
+        <p>People on the ladder next to me kept asking what the house was actually made of. I turned out to be better at answering that than at the carpentry, and in due course the answering became the work. What condition any of it is in is a question for someone whose job that is, and I will make sure it gets asked early.</p>
+      </div>
+      <ul class="styles" aria-label="Styles you will find on Broadway">
+        <li><strong>Federal</strong><span>The earlier brick</span></li>
+        <li><strong>Greek Revival</strong><span>White paint, heavy trim</span></li>
+        <li><strong>Gothic Revival</strong><span>Later, among the rest</span></li>
+      </ul>
+    </section>
+
+    <div class="wrap">
+      <figure class="wide">
+        <img src="assets/photos/fireplace-room-1600.webp" srcset="assets/photos/fireplace-room-1000.webp 1000w, assets/photos/fireplace-room-1600.webp 1600w"
+             sizes="(min-width: 1360px) 1240px, 92vw" width="1600" height="675" loading="lazy"
+             alt="A warm sitting room with a lit fireplace in a stone surround, a bookcase and a low chair beside a wooden table.">
+      </figure>
     </div>
 
-    <section class="sec" id="about" aria-labelledby="about-title">
+    <section class="offer wrap" aria-labelledby="offer-title">
+      <h2 id="offer-title" class="sr">What I work on</h2>
+      <a class="card" href="#houses">
+        <img src="assets/photos/stucco-brick-800.webp" width="800" height="533" loading="lazy"
+             alt="A two-story white house with a center door and a bright red maple in autumn.">
+        <span class="card__row"><span><strong>Village houses</strong><span>Brick and clapboard, nineteenth-century and earlier-twentieth.</span></span><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span>
+      </a>
+      <a class="card" href="#looking-at">
+        <img src="assets/photos/buxton-clapboard-800.webp" width="800" height="533" loading="lazy"
+             alt="Orange clapboard, black shutters and a white porch rail with a lattice skirt on the front of the Buxton Inn.">
+        <span class="card__row"><span><strong>The built fabric</strong><span>What every part of the front of a house is called.</span></span><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span>
+      </a>
+      <a class="card" href="#village">
+        <img src="assets/photos/licking-farmland-1000.webp" width="1000" height="500" loading="lazy"
+             alt="Rolling farmland in Licking County in autumn: open fields in front of a wooded ridge in deep red and copper.">
+        <span class="card__row"><span><strong>Land in the hills</strong><span>Rolling country on every side of the village.</span></span><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span>
+      </a>
+    </section>
+
+    <section class="houses" id="houses" aria-labelledby="houses-title">
       <div class="wrap">
-        <div class="cornice" aria-hidden="true"><i></i><i></i><i></i></div>
-        <h2 class="sec__title" id="about-title">About Everett</h2>
-        <div class="pil about" data-rise-group>
-          <div class="about__prose">
-            <p class="about__open notch" data-rise>Before this I was a restoration carpenter.</p>
-            <p data-rise>For the better part of fifteen years I worked on old houses in this county and the counties either side of it: sash, sills, door casings, running trim, and putting back what a previous owner had taken off. It was close work, and most of what I know about how a house is assembled I learned with a piece of it in my hands.</p>
-            <p data-rise>People on the ladder next to me kept asking what the house was actually made of, and whether the one down the road was the same. Clapboard or board and batten, brick or stucco over brick, original sash or later. I turned out to be better at answering that than at the carpentry, and in due course the answering became the work.</p>
-            <p data-rise>I can name what you are looking at: the entablature, the sash pattern, the course of the brick, which parts of a façade are original and which are later. What condition any of it is in is a question for someone whose job that is, and I will make sure it gets asked early.</p>
-            <p data-rise>I work one village and the ground around it. I would rather know one street’s cornices and door surrounds properly than three towns vaguely, and I will say plainly when a house does not match what you have asked me for.</p>
-          </div>
-          <figure class="about__photo" data-rise>
-            <img src="assets/photos/bank-doorway-900.webp"
-                 srcset="assets/photos/bank-doorway-640.webp 640w, assets/photos/bank-doorway-900.webp 900w"
-                 sizes="(min-width: 900px) 440px, 100vw" width="900" height="900" loading="lazy"
-                 alt="A dark door in a stone wall, framed by white-painted pilasters and a plain entablature.">
-            <figcaption>Door and entablature at the Bank of the Alexandrian Society, East Broadway, now a museum.</figcaption>
+        <div class="houses__head">
+          <h2 id="houses-title">Houses you’ll see around here</h2>
+          <p>None of these is for sale. They are examples of what the county is built from, and the kinds of houses people write to me about.</p>
+        </div>
+        <figure class="houses__lead">
+          <img src="assets/photos/bryn-mawr-1600.webp" srcset="assets/photos/bryn-mawr-1000.webp 1000w, assets/photos/bryn-mawr-1600.webp 1600w, assets/photos/bryn-mawr-2200.webp 2200w"
+               sizes="(min-width: 1360px) 1240px, 92vw" width="2200" height="1375" loading="lazy"
+               alt="A pale yellow house with tall white columns and rows of arched windows, half hidden by trees in gold leaf.">
+          <figcaption><strong>Columns and arched windows</strong><span>Licking County</span></figcaption>
+        </figure>
+        <div class="houses__row">
+          <figure>
+            <img src="assets/photos/gothic-cottage-800.webp" srcset="assets/photos/gothic-cottage-800.webp 800w, assets/photos/gothic-cottage-1400.webp 1400w"
+                 sizes="(min-width: 800px) 30vw, 92vw" width="1400" height="933" loading="lazy"
+                 alt="A dark red cottage with a steep center gable trimmed in white gingerbread, behind a white picket fence.">
+            <figcaption><strong>Gothic cottage</strong><span>Licking County</span></figcaption>
+          </figure>
+          <figure>
+            <img src="assets/photos/rogers-porch-800.webp" srcset="assets/photos/rogers-porch-800.webp 800w, assets/photos/rogers-porch-1200.webp 1200w"
+                 sizes="(min-width: 800px) 30vw, 92vw" width="1200" height="960" loading="lazy"
+                 alt="A white clapboard house with a slate roof, blue shutters and a wraparound porch in autumn.">
+            <figcaption><strong>Clapboard and a wraparound porch</strong><span>Granville</span></figcaption>
+          </figure>
+          <figure>
+            <img src="assets/photos/upham-wright-800.webp" srcset="assets/photos/upham-wright-800.webp 800w, assets/photos/upham-wright-1200.webp 1200w"
+                 sizes="(min-width: 800px) 30vw, 92vw" width="1200" height="960" loading="lazy"
+                 alt="A red brick Gothic Revival house with white bargeboards, tall chimneys and a lacy white porch.">
+            <figcaption><strong>Brick Gothic Revival</strong><span>Newark, Licking County</span></figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <section class="sec" aria-labelledby="why-title">
+    <section class="gloss" id="looking-at" aria-labelledby="looking-title">
       <div class="wrap">
-        <div class="cornice" aria-hidden="true"><i></i><i></i><i></i></div>
-        <h2 class="sec__title" id="why-title">Why work with Everett</h2>
-        <div class="pil points" data-rise-group>
-          <div data-rise>
-            <h3 class="notch">I can tell you what the house is made of.</h3>
-            <p>Sash, sill, lath, course, framing: named and described.</p>
-          </div>
-          <div data-rise>
-            <h3 class="notch">The village is a built thing and I read it that way.</h3>
-            <p>Why Broadway looks the way it does, which frontage came first and which came later, and what all that trim is called.</p>
-          </div>
-          <div data-rise>
-            <h3 class="notch">I will tell you when to walk.</h3>
-            <p>Plainly, and before you are attached to it.</p>
-          </div>
+        <div class="gloss__head">
+          <h2 id="looking-title">What you are looking at</h2>
+          <p>Ten things you will see walking Broadway, and what they are called.</p>
         </div>
+        <dl class="gloss__list">
+          <div><dt>Entablature</dt><dd>The horizontal band carried above columns or pilasters, in three parts: architrave, frieze and cornice. It is the heavy level line over the doorways and porches of the Greek Revival buildings along Broadway.</dd></div>
+          <div><dt>Cornice returns</dt><dd>Where the cornice at the eaves turns the corner and runs a short way along the gable end instead of stopping dead. You see them on the older frame buildings in the village.</dd></div>
+          <div><dt>Pilaster</dt><dd>A flat column standing only slightly proud of the wall, with a base and a capital like the real thing. Look for them at corners and around front doors on the Greek Revival frontages.</dd></div>
+          <div><dt>Sidelights</dt><dd>The narrow fixed windows on either side of a front door, which bring daylight into the hall behind it. You see them on Greek Revival entrances here, often with a transom above.</dd></div>
+          <div><dt>Fanlight</dt><dd>A half-round or half-elliptical window over a door, its glazing bars spreading like an opened fan. It is the signature of a Federal entrance.</dd></div>
+          <div><dt>Six-over-six sash</dt><dd>A window with six panes in the upper half and six in the lower. It is what you are looking at on most of the older houses here. What condition a particular one is in is a different question, and one for somebody whose job that is.</dd></div>
+          <div><dt>Clapboard</dt><dd>Long thin boards laid horizontally, each lapping the board below. I can tell you that it is clapboard and what it is made of. What shape it is in is a question for someone whose job that is, and I will make sure it gets asked early.</dd></div>
+          <div><dt>Brick course</dt><dd>One horizontal row of brick. The pattern the courses make is called the bond. Flemish bond alternates the long and short faces of the brick along each row.</dd></div>
+          <div><dt>Federal</dt><dd>The style of the early republic: light, flat and careful, with fanlights, slender trim and brick laid in a fine bond. In Granville it belongs to the earlier nineteenth-century buildings.</dd></div>
+          <div><dt>Greek Revival</dt><dd>The style that followed, built on the proportions of Greek temples: low pediments, heavy entablatures, columns and pilasters. It sits alongside later Gothic Revival on the same street, so Broadway is a mix and not a set.</dd></div>
+        </dl>
       </div>
     </section>
 
-    <section class="sec" id="looking-at" aria-labelledby="looking-title">
-      <div class="wrap">
-        <div class="cornice" aria-hidden="true"><i></i><i></i><i></i></div>
-        <h2 class="sec__title" id="looking-title">What you are looking at</h2>
-        <div class="pil">
-          <p class="glossary__intro" data-glossary-intro>Ten things you will see walking Broadway, and what they are called.</p>
-          <dl class="glossary" data-rise-group>
-            <div data-rise>
-              <dt class="notch">Entablature</dt>
-              <dd>The horizontal band carried above columns or pilasters, in three parts: architrave, frieze and cornice. It is the heavy level line over the doorways and porches of the Greek Revival buildings along Broadway.</dd>
-            </div>
-            <div data-rise>
-              <dt class="notch">Cornice returns</dt>
-              <dd>Where the cornice at the eaves turns the corner and runs a short way along the gable end instead of stopping dead. You see them on the older frame buildings in the village, hinting at a full pediment without building one.</dd>
-            </div>
-            <div data-rise>
-              <dt class="notch">Pilaster</dt>
-              <dd>A flat column standing only slightly proud of the wall, with a base and a capital like the real thing. Its job is to make a wall or a door surround read as classical. Look for them at corners and around front doors on the Greek Revival frontages.</dd>
-            </div>
-            <div data-rise>
-              <dt class="notch">Sidelights</dt>
-              <dd>The narrow fixed windows on either side of a front door, usually running its full height, which bring daylight into the hall behind it. You see them on Greek Revival entrances here, often with a transom above.</dd>
-            </div>
-            <div data-rise>
-              <dt class="notch">Fanlight</dt>
-              <dd>A half-round or half-elliptical window over a door, its glazing bars spreading like an opened fan. It is the signature of a Federal entrance, and you will find it on some of the earlier brick houses in the village.</dd>
-            </div>
-            <div data-rise>
-              <dt class="notch">Six-over-six sash</dt>
-              <dd>A window divided into six panes of glass in the upper half and six in the lower. It is what you are looking at on most of the older houses here, and the pane size is often the quickest clue to roughly how old a window is. What condition a particular one is in is a different question, and one for somebody whose job that is.</dd>
-            </div>
-            <div data-rise>
-              <dt class="notch">Clapboard</dt>
-              <dd>Long thin boards laid horizontally, each one lapping the board below. Most of the white-painted frame buildings here are sheathed in it. I can tell you that it is clapboard and what it is made of. What shape it is in is a question for someone whose job that is, and I will make sure it gets asked early.</dd>
-            </div>
-            <div data-rise>
-              <dt class="notch">Brick course</dt>
-              <dd>One horizontal row of brick. The pattern the courses make is called the bond. Flemish bond, which alternates the long and short faces of the brick along each row, turns up on Federal work in the village and is worth learning to spot.</dd>
-            </div>
-            <div data-rise>
-              <dt class="notch">Federal</dt>
-              <dd>The style of the early republic: light, flat and careful, with fanlights, slender trim and brick laid in a fine bond. In Granville it belongs to the earlier nineteenth-century buildings.</dd>
-            </div>
-            <div data-rise>
-              <dt class="notch">Greek Revival</dt>
-              <dd>The style that followed, built on the proportions of Greek temples: low pediments, heavy entablatures, columns and pilasters, usually painted white. It sits alongside later Gothic Revival on the same street, so Broadway is a mix and not a set.</dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-    </section>
-
-    <figure class="bleed" id="village">
-      <img src="assets/photos/licking-farmland-1600.webp"
-           srcset="assets/photos/licking-farmland-1000.webp 1000w, assets/photos/licking-farmland-1600.webp 1600w, assets/photos/licking-farmland-2400.webp 2400w"
-           sizes="100vw" width="2400" height="1200" loading="lazy"
-           alt="Rolling farmland in Licking County in autumn: open fields in front of a wooded ridge in deep red and copper.">
-    </figure>
-
-    <section class="sec sec--after-bleed" aria-labelledby="village-title">
-      <div class="wrap">
-        <div class="cornice" aria-hidden="true"><i></i><i></i><i></i></div>
-        <h2 class="sec__title" id="village-title">The village and the hills</h2>
-        <div class="pil village" data-rise-group>
-          <div class="village__text" data-rise>
-            <h3 class="notch">Broadway</h3>
-            <p>Broadway is the main street and the backbone of the village: brick and clapboard, Greek Revival and Federal frontages with later Gothic Revival among them, set under mature street trees.</p>
-            <h3 class="notch">The hill</h3>
-            <p>On the hill above the village is Denison University, founded in 1831: the building line you see from Broadway, and one of the larger employers in the county.</p>
-          </div>
-          <figure data-rise>
-            <img src="assets/photos/gothic-corner-1400.webp"
-                 srcset="assets/photos/gothic-corner-800.webp 800w, assets/photos/gothic-corner-1400.webp 1400w"
-                 sizes="(min-width: 900px) 52vw, 100vw" width="1400" height="933" loading="lazy"
-                 alt="A stone church tower with lancet windows and small spires rising behind an autumn tree.">
-            <figcaption>Gothic Revival in stone, in the Granville Historic District.</figcaption>
-          </figure>
-        </div>
-      </div>
-      <figure class="bleed bleed--road">
-        <img src="assets/photos/autumn-road-1600.webp"
-             srcset="assets/photos/autumn-road-1000.webp 1000w, assets/photos/autumn-road-1600.webp 1600w, assets/photos/autumn-road-2400.webp 2400w"
-             sizes="100vw" width="2400" height="1091" loading="lazy"
-             alt="A pale road running into a tunnel of gold and amber trees, Ohio.">
+    <section class="village wrap" id="village" aria-labelledby="village-title">
+      <h2 id="village-title">The village and the hills</h2>
+      <p class="village__lead">Broadway is the backbone of the village, with rolling country running out on every side.</p>
+      <figure class="wide wide--tall">
+        <img src="assets/photos/licking-farmland-1600.webp" srcset="assets/photos/licking-farmland-1000.webp 1000w, assets/photos/licking-farmland-1600.webp 1600w, assets/photos/licking-farmland-2400.webp 2400w"
+             sizes="(min-width: 1360px) 1240px, 92vw" width="2400" height="1200" loading="lazy"
+             alt="Open fields in Licking County rising to a long wooded ridge in copper and red.">
       </figure>
-      <div class="wrap sec__resume">
-        <div class="pil village" data-rise-group>
-          <figure class="village__tall" data-rise>
-            <img src="assets/photos/st-lukes-1000.webp"
-                 srcset="assets/photos/st-lukes-640.webp 640w, assets/photos/st-lukes-1000.webp 1000w"
-                 sizes="(min-width: 900px) 34vw, 100vw" width="1000" height="1250" loading="lazy"
-                 alt="The white-painted front of St. Luke’s Episcopal Church, with a pediment, columns and a cupola.">
-            <figcaption>St. Luke’s Episcopal Church, East Broadway.</figcaption>
-          </figure>
-          <div class="village__text" data-rise>
-            <h3 class="notch">White paint and trim</h3>
-            <p>Greek Revival frames and trim, painted white, with the cornices and pilasters this site is drawn from. The National Register nomination for the village names St. Luke’s Episcopal Church among its landmarks.</p>
-            <h3 class="notch">The hills and the farmland</h3>
-            <p>Rolling country runs out on every side. Welsh settlers took up land in these hills in the early years, and a larger group from Massachusetts and Connecticut founded the village, which is why it still looks more like New England than most of Ohio. Autumn color runs deep here, and late in the year the light comes long and low across the tree lines.</p>
-          </div>
+      <div class="village__grid">
+        <div><h3>Broadway</h3><p>Brick and clapboard, Greek Revival and Federal frontages with later Gothic Revival among them, set under mature street trees.</p></div>
+        <div><h3>The hill</h3><p>On the hill above the village is Denison University, founded in 1831: the building line you see from Broadway, and one of the larger employers in the county.</p></div>
+        <div><h3>The founding</h3><p>Welsh settlers took up land in these hills in the early years, and a larger group from Massachusetts and Connecticut founded the village, which is why it still looks more like New England than most of Ohio.</p></div>
+        <div><h3>The season</h3><p>Autumn color runs deep here, and late in the year the light comes long and low across the tree lines.</p></div>
+      </div>
+    </section>
+
+    <section class="bs wrap" id="buying-selling" aria-labelledby="bs-title">
+      <figure class="bs__photo">
+        <img src="assets/photos/staircase-1000.webp" srcset="assets/photos/staircase-640.webp 640w, assets/photos/staircase-1000.webp 1000w"
+             sizes="(min-width: 960px) 34vw, 92vw" width="1000" height="1250" loading="lazy"
+             alt="A curved staircase with a turned white balustrade and a dark rail, rising from a black and white tiled hall.">
+      </figure>
+      <div class="bs__main">
+        <h2 id="bs-title">Buying and selling</h2>
+        <div class="bs__cards">
+          <article>
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 15 16 5l11 10M8 13v14h16V13M13 27v-8h6v8"/></svg>
+            <h3>Buying</h3>
+            <dl>
+              <dt>The street first</dt><dd>We talk about the street and the kind of house before any particular house.</dd>
+              <dt>Walk it properly</dt><dd>We walk places more than once, and I name what is there as we go.</dd>
+              <dt>The list, early</dt><dd>The condition questions go in front of the people whose job they are, and I stay on it through to close.</dd>
+            </dl>
+          </article>
+          <article>
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M17 4H6v11l13 13 11-11zM11 10h.01"/></svg>
+            <h3>Selling</h3>
+            <dl>
+              <dt>Say what it is</dt><dd>The right name for the right feature sells an old house better than an adjective does.</dd>
+              <dt>Show the fabric</dt><dd>We photograph and list it so the materials read.</dd>
+              <dt>The follow-through</dt><dd>I handle the inquiries, the showings and everything after them.</dd>
+            </dl>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="sec" id="buying-selling" aria-labelledby="bs-title">
-      <div class="wrap">
-        <div class="cornice" aria-hidden="true"><i></i><i></i><i></i></div>
-        <h2 class="sec__title" id="bs-title">Buying and selling</h2>
-        <div class="pil split" data-rise-group>
-          <div class="split__col" data-rise>
-            <h3 class="split__head notch">Buying</h3>
-            <dl class="steps">
-              <dt>The street first</dt>
-              <dd>We talk about the street and the kind of house before we talk about any particular house.</dd>
-              <dt>Walk it properly</dt>
-              <dd>We walk places more than once, and I name what is there as we go.</dd>
-              <dt>The list, early</dt>
-              <dd>The condition questions go on the list early and in front of the people whose job they are, and I stay on it through to close.</dd>
-            </dl>
-          </div>
-          <div class="split__col" data-rise>
-            <h3 class="split__head notch">Selling</h3>
-            <dl class="steps">
-              <dt>Say what it is</dt>
-              <dd>The house is described accurately. The right name for the right feature sells an old house better than an adjective does.</dd>
-              <dt>Show the fabric</dt>
-              <dd>We photograph and list it so the materials read.</dd>
-              <dt>The follow-through</dt>
-              <dd>I handle the inquiries, the showings and everything after them.</dd>
-            </dl>
-          </div>
+    <div class="wrap">
+      <aside class="split" aria-label="Get in touch">
+        <div>
+          <h2>One question is enough</h2>
+          <p>You do not have to be ready to do anything.</p>
+          <a class="pill pill--clay" href="#contact">Ask me one question</a>
         </div>
-      </div>
-    </section>
+        <img src="assets/photos/autumn-road-1600.webp" srcset="assets/photos/autumn-road-1000.webp 1000w, assets/photos/autumn-road-1600.webp 1600w"
+             sizes="(min-width: 800px) 60vw, 92vw" width="1600" height="727" loading="lazy"
+             alt="A pale road running into a tunnel of gold and amber trees, Ohio.">
+      </aside>
+    </div>
 
-    <section class="sec" id="contact" aria-labelledby="contact-title">
-      <div class="wrap">
-        <div class="cornice" aria-hidden="true"><i></i><i></i><i></i></div>
-        <h2 class="sec__title" id="contact-title">Ask me one question</h2>
-        <div class="pil contact" data-rise-group>
-          <div data-rise>
-            <p class="contact__lead notch">One question about a street, a house or the hills is a perfectly good reason to write. You do not have to be ready to do anything.</p>
-            <p class="contact__big"><a href="tel:+17405550192">(740) 555-0192</a></p>
-            <p class="contact__big contact__big--mail"><a href="#contact">everett@hollowandridge.com</a></p>
-          </div>
-          <form class="form" action="thanks.html" method="get" novalidate data-form data-rise>
-            <div class="field">
-              <label for="f-name">Name</label>
-              <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
-              <p class="field__error" id="e-name" hidden></p>
-            </div>
-            <div class="field">
-              <label for="f-email">Email</label>
-              <input id="f-email" name="email" type="email" autocomplete="email" aria-describedby="e-email">
-              <p class="field__error" id="e-email" hidden></p>
-            </div>
-            <div class="field">
-              <label for="f-phone">Phone</label>
-              <input id="f-phone" name="phone" type="tel" autocomplete="tel" aria-describedby="e-contact">
-              <p class="field__error" id="e-contact" hidden></p>
-            </div>
-            <div class="field">
-              <label for="f-kind">Buying or selling?</label>
-              <select id="f-kind" name="kind">
-                <option value="">Choose one</option>
-                <option>Buying</option>
-                <option>Selling</option>
-                <option>Both</option>
-                <option>Just asking</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="f-message">Your question</label>
-              <textarea id="f-message" name="message" rows="5" aria-describedby="h-message"></textarea>
-              <p class="field__help" id="h-message">One question about a street, a house or the hills is a perfectly good reason to write.</p>
-            </div>
-            <p class="form__note">What you send comes straight to Everett and goes nowhere else. No list, no newsletter.</p>
-            <button class="btn" type="submit">Send your question</button>
-          </form>
-        </div>
+    <section class="contact wrap" id="contact" aria-labelledby="contact-title">
+      <div>
+        <h2 id="contact-title">Ask me one question</h2>
+        <p>One question about a street, a house or the hills is a perfectly good reason to write.</p>
+        <p class="contact__big"><a href="tel:+17405550192">(740) 555-0192</a></p>
+        <p class="contact__big contact__big--mail"><a href="#contact">everett@hollowandridge.com</a></p>
       </div>
+      <form class="form" action="thanks.html" method="get" novalidate data-form>
+        <div class="field">
+          <label for="f-name">Name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+          <p class="field__error" id="e-name" hidden></p>
+        </div>
+        <div class="form__two">
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" aria-describedby="e-email">
+            <p class="field__error" id="e-email" hidden></p>
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone</label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" aria-describedby="e-contact">
+            <p class="field__error" id="e-contact" hidden></p>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-kind">Buying or selling?</label>
+          <select id="f-kind" name="kind">
+            <option value="">Choose one</option>
+            <option>Buying</option>
+            <option>Selling</option>
+            <option>Both</option>
+            <option>Just asking</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-message">Your question</label>
+          <textarea id="f-message" name="message" rows="4" aria-describedby="h-message"></textarea>
+          <p class="field__help" id="h-message">One question about a street, a house or the hills is a perfectly good reason to write.</p>
+        </div>
+        <p class="form__note">What you send comes straight to Everett and goes nowhere else. No list, no newsletter.</p>
+        <button class="pill pill--brick" type="submit">Send your question</button>
+      </form>
     </section>
   </main>
 
   <footer class="foot">
+    <div class="wrap foot__grid">
+      <div>
+        <p class="foot__name">Everett Pryce</p>
+        <p>Hollow &amp; Ridge Real Estate</p>
+        <p>Granville, Ohio</p>
+      </div>
+      <div>
+        <p>Equal Housing Opportunity</p>
+        <p><a href="privacy.html">Privacy</a></p>
+        <p>Designed by ThinkFirst Studios</p>
+      </div>
+    </div>
     <div class="wrap">
-      <p class="foot__name">Everett Pryce</p>
-      <p>Granville, Ohio · Licking County</p>
-      <p>Hollow &amp; Ridge Real Estate</p>
-      <p>Equal Housing Opportunity</p>
-      <p><a href="privacy.html">Privacy</a></p>
       <details class="foot__credits">
         <summary>Photo credits</summary>
-        <p>Photographs cropped, retouched and color-adjusted from the originals.</p>
+        <p>Photographs cropped and color-adjusted from the originals. Houses are shown as examples of the area only.</p>
         <ul>
-          <li><a href="https://commons.wikimedia.org/wiki/File:East_Broadway_in_downtown_Granville.jpg">East Broadway in downtown Granville</a>, Nyttend, public domain</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Buxton_Inn.JPG">Buxton Inn</a>, Wdzinc, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></li>
           <li><a href="https://commons.wikimedia.org/wiki/File:Bank_of_the_Alexandrian_Society.jpg">Bank of the Alexandrian Society</a>, Nyttend, public domain</li>
+          <li><a href="https://www.pexels.com/photo/cozy-living-room-15558114/">Cozy living room</a>, hello aesthe, Pexels License</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Stucco-and-brick_house_in_Granville.jpg">Stucco-and-brick house in Granville</a>, Nyttend, public domain</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Buxton_Inn,_Granville,_OH,_US.jpg">Buxton Inn, Granville</a>, Jud McCranie, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
           <li><a href="https://commons.wikimedia.org/wiki/File:Licking_Township_Farmland_Autumn_1.JPG">Licking Township Farmland Autumn 1</a>, Ibagli, public domain</li>
-          <li><a href="https://commons.wikimedia.org/wiki/File:Granville_Historic_District_1.jpg">Granville Historic District 1</a>, Niagara66, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Bryn_Mawr,_Licking_Co,_OH,_US.jpg">Bryn Mawr, Licking County</a>, Jud McCranie, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Casterton_House.jpg">Casterton House</a>, Wdzinc, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Rogers_House_in_Granville.jpg">Rogers House in Granville</a>, Nyttend, public domain</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Upham-Wright_House.JPG">Upham-Wright House</a>, Wdzinc, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></li>
+          <li><a href="https://www.pexels.com/photo/staircase-in-classic-house-16501685/">Staircase in a classic house</a>, Curtis Adams, Pexels License</li>
           <li><a href="https://www.pexels.com/photo/serene-ohio-roadway-lined-with-autumn-trees-34421047/">Ohio road in autumn</a>, Keith Cassill, Pexels License</li>
-          <li><a href="https://commons.wikimedia.org/wiki/File:St._Luke's_Episcopal_Church_in_Granville.jpg">St. Luke’s Episcopal Church in Granville</a>, Nyttend, public domain</li>
         </ul>
       </details>
-      <p class="foot__small">Designed by ThinkFirst Studios</p>
     </div>
   </footer>
 

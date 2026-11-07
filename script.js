@@ -1,9 +1,7 @@
 (function () {
   'use strict';
 
-  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  // Header condenses once the page moves
+  // Header turns solid once the page moves
   var head = document.querySelector('[data-head]');
   if (head) {
     var onScroll = function () { head.classList.toggle('is-condensed', window.scrollY > 32); };
@@ -25,32 +23,6 @@
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && nav.classList.contains('is-open')) { setOpen(false); toggle.focus(); }
     });
-  }
-
-  // Content rises with a 60ms stagger
-  document.querySelectorAll('[data-rise-group]').forEach(function (group) {
-    group.querySelectorAll('[data-rise]').forEach(function (el, i) {
-      el.style.transitionDelay = (Math.min(i, 5) * 60) + 'ms';
-    });
-  });
-
-  // Each cornice draws once from the centre, the pilaster follows, content rises
-  var drawn = document.querySelectorAll('.cornice, .pil');
-  var groups = document.querySelectorAll('[data-rise-group]');
-  if (reduced || !('IntersectionObserver' in window)) {
-    drawn.forEach(function (el) { el.classList.add('is-drawn'); });
-    groups.forEach(function (g) { g.classList.add('is-risen'); });
-  } else {
-    var seen = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add(entry.target.hasAttribute('data-rise-group') ? 'is-risen' : 'is-drawn');
-        if (entry.target.matches('.pil[data-rise-group]')) entry.target.classList.add('is-drawn');
-        seen.unobserve(entry.target);
-      });
-    }, { threshold: 0, rootMargin: '0px 0px -8% 0px' });
-    drawn.forEach(function (el) { seen.observe(el); });
-    groups.forEach(function (g) { seen.observe(g); });
   }
 
   // Form: a name and one way to reach you, nothing else required
