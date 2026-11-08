@@ -100,6 +100,7 @@ a { color: var(--kiln); text-underline-offset: 3px; }
 .who__text { display: grid; gap: 18px; }
 .who__text h2 { max-width: 11em; }
 .who__text p { max-width: 36em; color: var(--bark); }
+.who__link { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; }
 .reel { position: relative; overflow: hidden; }
 .reel__track { display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
 .reel__track::-webkit-scrollbar { display: none; }
