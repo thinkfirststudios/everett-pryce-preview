@@ -30,7 +30,7 @@
   var stage = document.querySelector('[data-stage]');
   if (stage) {
     var slides = Array.prototype.slice.call(stage.querySelectorAll('[data-slide]'));
-    var caption = stage.querySelector('.stage__caption');
+    var caption = stage.querySelector('.stage__card');
     var at = 0;
     var showSlide = function (i) {
       at = (i + slides.length) % slides.length;

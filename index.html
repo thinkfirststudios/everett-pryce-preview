@@ -34,25 +34,25 @@
   <main id="main">
     <section class="stage" id="top" aria-labelledby="hero-title" data-stage>
       <div class="stage__slides">
-        <figure class="stage__slide is-on" data-slide data-title="Gothic Revival" data-place="Newark, Licking County" data-spec="Bargeboards|Tall chimneys|Lacy porch">
-          <picture>
-            <source media="(max-width: 699px)" type="image/webp" srcset="assets/photos/slide-gothic-brick-phone-800.webp 800w, assets/photos/slide-gothic-brick-phone-1200.webp 1200w" sizes="100vw">
-            <img src="assets/photos/slide-gothic-brick-1800.webp" srcset="assets/photos/slide-gothic-brick-1200.webp 1200w, assets/photos/slide-gothic-brick-1800.webp 1800w, assets/photos/slide-gothic-brick-2600.webp 2600w"
-                 sizes="100vw" width="2600" height="1463" fetchpriority="high" alt="A red brick Gothic Revival house on a wide sunny lawn, with white bargeboards, tall chimneys and a lacy white porch.">
-          </picture>
-        </figure>
-        <figure class="stage__slide" data-slide data-title="Second Empire" data-place="Newark, Licking County" data-spec="Mansard roof|Arched window hoods|Brick">
-          <picture>
-            <source media="(max-width: 699px)" type="image/webp" srcset="assets/photos/slide-mansard-phone-800.webp 800w, assets/photos/slide-mansard-phone-1200.webp 1200w" sizes="100vw">
-            <img src="assets/photos/slide-mansard-1800.webp" srcset="assets/photos/slide-mansard-1200.webp 1200w, assets/photos/slide-mansard-1800.webp 1800w, assets/photos/slide-mansard-2600.webp 2600w"
-                 sizes="100vw" width="2600" height="1463" loading="lazy" alt="A tall red brick house with a mansard roof and cream arched window hoods, standing among evergreens in sunlight.">
-          </picture>
-        </figure>
-        <figure class="stage__slide" data-slide data-title="The Buxton Inn" data-place="Broadway, Granville. An inn since 1812" data-spec="Clapboard|Two-story porch|Black shutters">
+        <figure class="stage__slide is-on" data-slide data-title="The Buxton Inn" data-place="Broadway, Granville. An inn since 1812" data-spec="Clapboard|Two-story porch|Black shutters">
           <picture>
             <source media="(max-width: 699px)" type="image/webp" srcset="assets/photos/slide-buxton-phone-800.webp 800w, assets/photos/slide-buxton-phone-1200.webp 1200w" sizes="100vw">
             <img src="assets/photos/slide-buxton-1800.webp" srcset="assets/photos/slide-buxton-1200.webp 1200w, assets/photos/slide-buxton-1800.webp 1800w, assets/photos/slide-buxton-2600.webp 2600w"
-                 sizes="100vw" width="2600" height="1463" loading="lazy" alt="The Buxton Inn on Broadway: orange clapboard, black shutters and a white two-story porch with a lattice rail, under golden leaves.">
+                 sizes="100vw" width="2600" height="1463" fetchpriority="high" alt="The Buxton Inn on Broadway in sunshine: orange clapboard, dark shutters and a white two-story porch with a lattice rail, under golden leaves.">
+          </picture>
+        </figure>
+        <figure class="stage__slide" data-slide data-title="Columns and arches" data-place="Licking County" data-spec="Two-story columns|Arched windows|Iron balcony">
+          <picture>
+            <source media="(max-width: 699px)" type="image/webp" srcset="assets/photos/slide-columns-phone-800.webp 800w, assets/photos/slide-columns-phone-1200.webp 1200w" sizes="100vw">
+            <img src="assets/photos/slide-columns-1800.webp" srcset="assets/photos/slide-columns-1200.webp 1200w, assets/photos/slide-columns-1800.webp 1800w, assets/photos/slide-columns-2600.webp 2600w"
+                 sizes="100vw" width="2600" height="1463" loading="lazy" alt="A pale yellow house with tall white columns, an iron balcony and rows of arched windows, among trees in gold leaf.">
+          </picture>
+        </figure>
+        <figure class="stage__slide" data-slide data-title="Wraparound porch" data-place="Granville" data-spec="Clapboard|Slate roof|Pointed gable window">
+          <picture>
+            <source media="(max-width: 699px)" type="image/webp" srcset="assets/photos/slide-porch-phone-800.webp 800w, assets/photos/slide-porch-phone-1200.webp 1200w" sizes="100vw">
+            <img src="assets/photos/slide-porch-1800.webp" srcset="assets/photos/slide-porch-1200.webp 1200w, assets/photos/slide-porch-1800.webp 1800w, assets/photos/slide-porch-2600.webp 2600w"
+                 sizes="100vw" width="2600" height="1463" loading="lazy" alt="A white clapboard house with a slate roof, blue shutters and a wraparound porch, with orange and gold leaves around it.">
           </picture>
         </figure>
       </div>
@@ -64,7 +64,7 @@
             <button class="glass glass--round head__toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav" aria-label="Menu">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
             </button>
-            <a class="pill pill--cream head__ask" href="#contact">Ask a question</a>
+            <a class="pill head__ask" href="#contact">Ask a question</a>
           </div>
           <a class="head__name" href="#top">Everett Pryce<small>Real estate in Granville, Ohio</small></a>
           <a class="glass head__phone" href="tel:+17405550192">(740) 555-0192</a>
@@ -80,24 +80,26 @@
       </header>
 
       <div class="stage__copy">
-        <h1 id="hero-title">Know what you’re looking at</h1>
-        <div class="stage__caption" aria-live="polite">
-          <p class="stage__title" data-stage-title>Gothic Revival</p>
-          <p class="stage__place" data-stage-place>Newark, Licking County</p>
+        <div class="stage__card">
+          <h1 id="hero-title">Know what you’re looking at</h1>
+          <div class="stage__caption" aria-live="polite">
+            <p class="stage__title" data-stage-title>The Buxton Inn</p>
+            <p class="stage__place" data-stage-place>Broadway, Granville. An inn since 1812</p>
+          </div>
         </div>
       </div>
 
       <div class="stage__bar">
         <button class="glass stage__step stage__step--prev" type="button" data-stage-prev>
-          <i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></i><span><small>Previous house</small><span data-stage-prev-name>The Buxton Inn</span></span>
+          <i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></i><span><small>Previous house</small><span data-stage-prev-name>Wraparound porch</span></span>
         </button>
         <ul class="glass stage__spec" data-stage-spec aria-label="What to look at on this house">
-          <li>Bargeboards</li>
-          <li>Tall chimneys</li>
-          <li>Lacy porch</li>
+          <li>Clapboard</li>
+          <li>Two-story porch</li>
+          <li>Black shutters</li>
         </ul>
         <button class="glass stage__step stage__step--next" type="button" data-stage-next>
-          <span><small>Next house</small><span data-stage-next-name>Second Empire</span></span><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>
+          <span><small>Next house</small><span data-stage-next-name>Columns and arches</span></span><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>
         </button>
       </div>
       <a class="stage__scroll" href="#about">Scroll to read on</a>
@@ -147,30 +149,23 @@
         <ul class="rail__list" data-rail-list>
           <li class="rail__item is-open">
             <button type="button" aria-expanded="true">
-              <img src="assets/photos/bryn-mawr-1600.webp" srcset="assets/photos/bryn-mawr-1000.webp 1000w, assets/photos/bryn-mawr-1600.webp 1600w, assets/photos/bryn-mawr-2200.webp 2200w" sizes="(min-width: 960px) 62vw, 80vw" width="2200" height="1375" loading="lazy"
-                   alt="A pale yellow house with tall white columns and rows of arched windows, half hidden by trees in gold leaf.">
-              <span class="rail__cap"><span><strong>Columns and arched windows</strong><span>Licking County</span></span><em>Not for sale</em></span>
+              <img src="assets/photos/stucco-brick-1400.webp" srcset="assets/photos/stucco-brick-800.webp 800w, assets/photos/stucco-brick-1400.webp 1400w" sizes="(min-width: 960px) 62vw, 80vw" width="1400" height="933" loading="lazy"
+                   alt="A two-story white house with a center door and a bright red maple in autumn.">
+              <span class="rail__cap"><span><strong>Stucco over brick, center door</strong><span>Granville</span></span><em>Not for sale</em></span>
             </button>
           </li>
           <li class="rail__item">
             <button type="button" aria-expanded="false">
               <img src="assets/photos/gothic-cottage-1400.webp" srcset="assets/photos/gothic-cottage-800.webp 800w, assets/photos/gothic-cottage-1400.webp 1400w" sizes="(min-width: 960px) 62vw, 80vw" width="1400" height="933" loading="lazy"
-                   alt="A dark red cottage with a steep center gable trimmed in white gingerbread, behind a white picket fence.">
+                   alt="A red cottage with a steep center gable trimmed in white gingerbread, behind a white picket fence.">
               <span class="rail__cap"><span><strong>Gothic cottage</strong><span>Licking County</span></span><em>Not for sale</em></span>
             </button>
           </li>
           <li class="rail__item">
             <button type="button" aria-expanded="false">
-              <img src="assets/photos/rogers-porch-1200.webp" srcset="assets/photos/rogers-porch-800.webp 800w, assets/photos/rogers-porch-1200.webp 1200w" sizes="(min-width: 960px) 62vw, 80vw" width="1200" height="960" loading="lazy"
-                   alt="A white clapboard house with a slate roof, blue shutters and a wraparound porch in autumn.">
-              <span class="rail__cap"><span><strong>Clapboard and a wraparound porch</strong><span>Granville</span></span><em>Not for sale</em></span>
-            </button>
-          </li>
-          <li class="rail__item">
-            <button type="button" aria-expanded="false">
-              <img src="assets/photos/stucco-brick-1400.webp" srcset="assets/photos/stucco-brick-800.webp 800w, assets/photos/stucco-brick-1400.webp 1400w" sizes="(min-width: 960px) 62vw, 80vw" width="1400" height="933" loading="lazy"
-                   alt="A two-story white house with a center door and a bright red maple in autumn.">
-              <span class="rail__cap"><span><strong>Stucco over brick, center door</strong><span>Granville</span></span><em>Not for sale</em></span>
+              <img src="assets/photos/mansard-1400.webp" srcset="assets/photos/mansard-800.webp 800w, assets/photos/mansard-1400.webp 1400w" sizes="(min-width: 960px) 62vw, 80vw" width="1400" height="933" loading="lazy"
+                   alt="A tall red brick house with a mansard roof and cream arched window hoods, among sunlit evergreens.">
+              <span class="rail__cap"><span><strong>Mansard roof</strong><span>Newark, Licking County</span></span><em>Not for sale</em></span>
             </button>
           </li>
         </ul>
@@ -287,7 +282,7 @@
           <p class="field__help" id="h-message">One question about a street, a house or the hills is a perfectly good reason to write.</p>
         </div>
         <p class="form__note">What you send comes straight to Everett and goes nowhere else. No list, no newsletter.</p>
-        <button class="pill pill--brick" type="submit">Send your question</button>
+        <button class="pill" type="submit">Send your question</button>
       </form>
     </section>
   </main>
@@ -319,7 +314,6 @@
           <li><a href="https://commons.wikimedia.org/wiki/File:Casterton_House.jpg">Casterton House</a>, Wdzinc, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></li>
           <li><a href="https://commons.wikimedia.org/wiki/File:Rogers_House_in_Granville.jpg">Rogers House in Granville</a>, Nyttend, public domain</li>
           <li><a href="https://commons.wikimedia.org/wiki/File:Hull_Place.jpg">Hull Place</a>, Wdzinc, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></li>
-          <li><a href="https://commons.wikimedia.org/wiki/File:Upham-Wright_House.JPG">Upham-Wright House</a>, Wdzinc, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></li>
           <li><a href="https://www.pexels.com/photo/staircase-in-classic-house-16501685/">Staircase in a classic house</a>, Curtis Adams, Pexels License</li>
           <li><a href="https://www.pexels.com/photo/serene-ohio-roadway-lined-with-autumn-trees-34421047/">Ohio road in autumn</a> (thanks page), Keith Cassill, Pexels License</li>
         </ul>
